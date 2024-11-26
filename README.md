@@ -1,14 +1,17 @@
 # **GMM-VAE: Variational Autoencoder with Gaussian Mixture Model for MNIST Digit Classification**
 
-### **Overview**  
+### **Overview**
+
 This project explores the integration of a Variational Autoencoder (VAE) and a Gaussian Mixture Model (GMM) for classifying MNIST digits **1, 4, and 8**. The VAE encodes the input images into a continuous, low-dimensional latent space, and the GMM leverages this latent space to classify the digits.  
 
 Key highlights of the project include visualizations of the latent space, reconstruction of the input images, and evaluation of GMM clustering performance.  
 
 ---
 
-### **Features**  
-- **2D Latent Space Representation**:  
+### **Features**
+
+- **2D Latent Space Representation**:
+
   Visualizes how digits are encoded into a 2-dimensional Gaussian-distributed latent space, showing clustering and overlap.  
 
 - **Image Reconstruction**:  
@@ -47,22 +50,26 @@ Key highlights of the project include visualizations of the latent space, recons
 ### **Usage**  
 
 1. Clone the repository:  
+
    ```bash
    git clone https://github.com/RISHIT7/GMM-VAE.git
    cd GMM-VAE
    ```
 
 2. Install dependencies:  
+
    ```bash
    pip install -r requirements.txt
    ```
 
 3. Train the VAE model and visualize results:  
+
    ```bash
    python train_vae.py
    ```
 
 4. How to run the code
+
    ```bash
    # Running code for training. save the model in the same directory with name "vae.path"
    # Save the GMM parameters in the same folder. You can use pickle to save the parameters. 
@@ -81,21 +88,38 @@ Key highlights of the project include visualizations of the latent space, recons
 ### **Results**  
 
 #### **Latent Space Visualization**  
-Illustrates digit separation and clustering quality in the latent space.  
+
+![Latent Space in 2D](./A3/images/latent_space.png)
+
+> Illustrates digit separation and clustering quality in the latent space.  
 
 #### **Reconstruction**  
-Reconstructed MNIST digits show the ability of the VAE to capture essential features.  
+
+![Reconstruction](./A3/images/reconstruction.png)
+
+> Reconstructed MNIST digits show the ability of the VAE to capture essential features.  
+
+#### **Manifold Generation**  
+
+![Manifold](./A3/images/manifold.png)
+
+> Manifold generated using gaussian sampled latent varibales.
 
 #### **Clustering with GMM**  
-Evaluate overlap between Gaussian distributions and identify improvement areas for better classification.  
+
+![GMM Clusters](./A3/images/gmm_clusters.png)
+
+> Evaluate overlap between Gaussian distributions and identify improvement areas for better classification.  
 
 ---
 
 ### **Authors**  
-- **Rishit Jakharia**   
-- **Aditya Jha** 
+
+- **Rishit Jakharia**
+- **Aditya Jha**
 
 ---
 
-### **Acknowledgment**  
+### **Acknowledgment**
+
 This work was completed as part of **COL333 Assignment 3.2** at **IIT Delhi** under the guidance of course instructors.
